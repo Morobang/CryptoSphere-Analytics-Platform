@@ -1,0 +1,251 @@
+# Data Pipeline Project - Requirements
+# 
+# This file lists all Python dependencies required for the complete data pipeline project.
+# Install with: pip install -r requirements.txt
+#
+# For development: pip install -r requirements.txt -r requirements-dev.txt
+
+# =============================================================================
+# CORE DATA PROCESSING
+# =============================================================================
+
+# Data manipulation and analysis
+pandas>=2.0.0
+numpy>=1.24.0
+scipy>=1.10.0
+
+# Data validation and quality
+great-expectations>=0.17.0
+pandera>=0.17.0
+
+# Database connectivity
+SQLAlchemy>=2.0.0
+psycopg2-binary>=2.9.0  # PostgreSQL
+pymysql>=1.1.0          # MySQL
+sqlite3                 # Built-in with Python
+
+# File I/O and data formats
+pyarrow>=12.0.0         # Parquet files
+openpyxl>=3.1.0         # Excel files
+xlsxwriter>=3.1.0       # Excel writing
+h5py>=3.9.0             # HDF5 files
+
+# =============================================================================
+# WEB APIs AND HTTP
+# =============================================================================
+
+# HTTP requests and web APIs
+requests>=2.31.0
+urllib3>=2.0.0
+httpx>=0.24.0           # Modern async HTTP client
+
+# Authentication
+requests-oauthlib>=1.3.0
+PyJWT>=2.8.0
+
+# =============================================================================
+# MACHINE LEARNING
+# =============================================================================
+
+# Core ML libraries
+scikit-learn>=1.3.0
+xgboost>=1.7.0
+lightgbm>=4.0.0
+catboost>=1.2.0
+
+# Deep learning (optional - uncomment if needed)
+# tensorflow>=2.13.0
+# torch>=2.0.0
+# transformers>=4.33.0
+
+# Feature engineering and preprocessing
+feature-engine>=1.6.0
+imbalanced-learn>=0.11.0
+
+# Model interpretability
+shap>=0.42.0
+lime>=0.2.0
+
+# Hyperparameter optimization
+optuna>=3.3.0
+hyperopt>=0.2.7
+
+# =============================================================================
+# DATA VISUALIZATION
+# =============================================================================
+
+# Core plotting libraries
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.15.0
+
+# Interactive dashboards
+dash>=2.14.0
+streamlit>=1.25.0       # Alternative dashboard framework
+
+# Statistical plotting
+plotnine>=0.12.0        # Grammar of graphics
+
+# =============================================================================
+# POWER BI AND BUSINESS INTELLIGENCE
+# =============================================================================
+
+# Power BI integration
+msal>=1.23.0            # Microsoft Authentication Library
+azure-identity>=1.14.0  # Azure authentication
+
+# =============================================================================
+# WORKFLOW ORCHESTRATION AND AUTOMATION
+# =============================================================================
+
+# Task scheduling and orchestration
+schedule>=1.2.0
+APScheduler>=3.10.0
+
+# Process and system monitoring
+psutil>=5.9.0
+
+# Async processing
+asyncio                 # Built-in with Python 3.7+
+aiohttp>=3.8.0
+aiofiles>=23.0.0
+
+# Message queues (optional)
+celery>=5.3.0
+redis>=4.6.0
+
+# =============================================================================
+# CONFIGURATION AND LOGGING
+# =============================================================================
+
+# Configuration management
+pyyaml>=6.0
+python-dotenv>=1.0.0
+configparser            # Built-in with Python
+
+# Advanced logging
+loguru>=0.7.0
+structlog>=23.1.0
+
+# =============================================================================
+# TESTING AND QUALITY ASSURANCE
+# =============================================================================
+
+# Core testing framework
+pytest>=7.4.0
+pytest-cov>=4.1.0      # Coverage reporting
+pytest-mock>=3.11.0    # Mocking
+pytest-asyncio>=0.21.0 # Async testing
+
+# Code quality
+black>=23.7.0           # Code formatting
+isort>=5.12.0           # Import sorting
+flake8>=6.0.0           # Linting
+mypy>=1.5.0             # Type checking
+
+# Security scanning
+bandit>=1.7.0           # Security linting
+safety>=2.3.0           # Dependency vulnerability scanner
+
+# =============================================================================
+# JUPYTER AND INTERACTIVE DEVELOPMENT
+# =============================================================================
+
+# Jupyter ecosystem
+jupyter>=1.0.0
+jupyterlab>=4.0.0
+ipywidgets>=8.1.0       # Interactive widgets
+nbconvert>=7.7.0        # Notebook conversion
+
+# Enhanced notebook experience
+jupyterlab-git>=0.42.0  # Git integration
+jupyterlab-lsp>=4.2.0   # Language server protocol
+
+# =============================================================================
+# DOCUMENTATION
+# =============================================================================
+
+# Documentation generation
+mkdocs>=1.5.0
+mkdocs-material>=9.2.0
+sphinx>=7.1.0           # Alternative documentation tool
+
+# =============================================================================
+# UTILITIES
+# =============================================================================
+
+# Date and time handling
+python-dateutil>=2.8.0
+pytz>=2023.3
+
+# Progress bars and CLI
+tqdm>=4.66.0
+click>=8.1.0            # Command line interface
+rich>=13.5.0            # Rich text and progress
+
+# String processing
+fuzzywuzzy>=0.18.0      # Fuzzy string matching
+python-Levenshtein>=0.21.0  # String distance
+
+# File operations
+pathlib                 # Built-in with Python 3.4+
+watchdog>=3.0.0         # File system event monitoring
+
+# Encryption and security
+cryptography>=41.0.0
+bcrypt>=4.0.0
+
+# =============================================================================
+# DEPLOYMENT AND CONTAINERIZATION
+# =============================================================================
+
+# Container and deployment
+docker>=6.1.0           # Docker SDK
+kubernetes>=27.2.0      # Kubernetes client
+
+# Cloud providers (uncomment as needed)
+# boto3>=1.28.0          # AWS SDK
+# azure-storage-blob>=12.17.0  # Azure Blob Storage
+# google-cloud-storage>=2.10.0  # Google Cloud Storage
+
+# =============================================================================
+# PERFORMANCE AND OPTIMIZATION
+# =============================================================================
+
+# Performance profiling
+memory-profiler>=0.61.0
+line-profiler>=4.1.0
+py-spy>=0.3.0           # Sampling profiler
+
+# Parallel processing
+joblib>=1.3.0
+multiprocessing         # Built-in with Python
+concurrent.futures      # Built-in with Python 3.2+
+
+# Caching
+diskcache>=5.6.0
+redis>=4.6.0            # For distributed caching
+
+# =============================================================================
+# OPTIONAL: SPECIALIZED LIBRARIES
+# =============================================================================
+
+# Time series analysis (uncomment if needed)
+# statsmodels>=0.14.0
+# prophet>=1.1.0
+# sktime>=0.22.0
+
+# Natural language processing (uncomment if needed)
+# nltk>=3.8.0
+# spacy>=3.6.0
+# textblob>=0.17.0
+
+# Image processing (uncomment if needed)
+# Pillow>=10.0.0
+# opencv-python>=4.8.0
+# scikit-image>=0.21.0
+
+# Geospatial analysis (uncomment if needed)
+# geopandas>=0.13.0
+# folium>=0.14.0
+# shapely>=2.0.0
