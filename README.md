@@ -22,7 +22,7 @@
 
 ### What we're working with:
 - **Data Source**: CoinMarketCap API (free tier)
-- **Cryptocurrencies**: Focus on **top 10 coins** (BTC, ETH, ADA, DOT, etc.)
+- **Cryptocurrencies**: Focus on **top 10 coins** 
 - **Update Frequency**: Every 5 minutes (API rate limit friendly)
 - **Historical Data**: Limited to what's available through free API
 
