@@ -119,14 +119,7 @@ BEGIN
         data_quality_flag NVARCHAR(20) DEFAULT 'VALID' -- VALID, WARNING, ERROR
     );
 
-    
-    -- Create foreign key relationship
-    ALTER TABLE bronze.cryptocurrency_data 
-    ADD CONSTRAINT FK_bronze_crypto_batch 
-    FOREIGN KEY (batch_id) REFERENCES bronze.api_response_status(batch_id);
-
     PRINT 'Table [bronze.cryptocurrency_data] created successfully';
-    PRINT 'Indexes and foreign keys created for optimal performance';
 END
 ELSE
 BEGIN
