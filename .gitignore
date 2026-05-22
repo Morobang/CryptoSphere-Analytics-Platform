@@ -1,1 +1,19 @@
-.env*
+# Secrets — never commit these
+.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.venv/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Logs and local data (too large for git)
+logs/
+01-data/bronze/*.csv
+01-data/silver/*.csv
+01-data/gold/*.csv
